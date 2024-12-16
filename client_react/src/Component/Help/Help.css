@@ -1,0 +1,90 @@
+/* General Styling */
+.container_help {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.container_help h1 {
+  font-size: 2.2rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container_help p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.section li::before {
+  content: "•";
+  font-size: 1.2rem;
+  color: #4a90e2;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section strong {
+  color: #4a90e2;
+}
+
+/* Links Styling */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container_help {
+    padding: 15px;
+  }
+
+  .container_help h1 {
+    font-size: 1.8rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .container_help p {
+    font-size: 0.9rem;
+  }
+}
