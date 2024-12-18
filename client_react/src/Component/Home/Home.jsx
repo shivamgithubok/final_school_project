@@ -232,28 +232,6 @@ function SchoolManagement() {
                         ))}
                     </div>
                 </div>
-
-                {/* Content Sections
-                <div className="sub_representative_second">
-                    <div className="outliner">
-                        <div id="dashboard_section" className="section_content hide">
-                            <p>Dashboard Content</p>
-                        </div>
-                        <div id="student_section" className="section_content hide">
-                            <div className="student_element">All Students</div>
-                            <div className="student_element">Add New</div>
-                            <div className="student_element">Manage Families</div>
-                        </div>
-                        <div id="attendance_section" className="section_content hide">
-                            <div className="student_element">Mark Attendance</div>
-                            <div className="student_element">Attendance Report</div>
-                        </div>
-                        <div id="fee_section" className="section_content hide">
-                            <div className="student_element">Collect Fee</div>
-                            <div className="student_element">Fee Report</div>
-                        </div>
-                    </div>
-                </div> */}
             </main>
         </div>
     );
