@@ -13,14 +13,14 @@ import Contact from './Component/Main/Contact';
 function AllRoutes({ slidein, handleslidein }) {
     return (
         <Routes>
-            <Route path="/" element={<First />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<First />} />
             <Route path="/help" element={<Help />} />
             <Route path="/login" element={<Login />} />
             <Route path="/main" element={<RouteMain slidein={slidein} handleslidein={handleslidein} />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/buffer" element={<Buffer />} />
             <Route path="/homeRoute" element={<HomeRoute />} />
-            <Route path="/home" element={<Home />} />
             <Route path="/feature" element={<Feature />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>
