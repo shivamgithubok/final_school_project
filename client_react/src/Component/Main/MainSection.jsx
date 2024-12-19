@@ -1,27 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Main_1.css';
+import backgroundImage from './kids2.jpg'; // Correct background image path
 
-import './Main.css';
 const MainSection = () => {
-  const falling = () => {
-    // Your falling function logic here
-    console.log('Falling effect triggered');
-  };
-
   return (
-    <main onClick={falling}>
-      <div className="container">
-        <h1>POWERFUL SCHOOL</h1>
-        <h2>MANAGEMENT</h2>
-        <p className="main_para">
-          Now you can manage your school, college, institute, student record with this application
-        </p>
-        <button className="main_btn">
-          <i className="fa-regular fa-user"></i>Signup for free
-        </button>
-        <button className="main_btnn">
-          <i className="fa-solid fa-arrow-right"></i><Link to="/Home">Learn more</Link>
-        </button>
+    <main>
+      <div className="content">
+        <h1>Connecting every part of the campus.</h1>
+        <h2> </h2>
+
+        {/* Centered Button */}
+        <Link to="/Home" className="learn-more-btn">
+          <i className="fa-solid fa-arrow-right"></i> Get Started
+        </Link>
       </div>
     </main>
   );

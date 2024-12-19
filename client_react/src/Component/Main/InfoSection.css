@@ -1,0 +1,112 @@
+/* Section Container */
+.info_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* White Background */
+    padding: 20px 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+  
+  /* Text at the Top */
+  .info_text_top {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .info_text_top h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .info_text_top p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  /* Image Slider */
+  .info_slider_container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .full_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation Buttons */
+  .slider_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider_btn.left {
+    left: 20px;
+  }
+  
+  .slider_btn.right {
+    right: 20px;
+  }
+  
+  .slider_btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .info_text_top h1 {
+      font-size: 1.5rem;
+    }
+  
+    .info_text_top p {
+      font-size: 0.9rem;
+    }
+  
+    .slider_btn {
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info_text_top h1 {
+      font-size: 1.3rem;
+    }
+  
+    .info_text_top p {
+      font-size: 0.8rem;
+    }
+  
+    .slider_btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1.3rem;
+    }
+  }
+  

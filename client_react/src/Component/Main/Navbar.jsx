@@ -1,53 +1,68 @@
-import React, { useState } from 'react';
-import './Main.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import logo from "./logo.png";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleDropdown = (e) => {
+    e.stopPropagation();
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
+  window.addEventListener("click", closeDropdown);
+
   return (
-    // <div className="parent_container">
-      <div className="navbar">
-        <div className="logo">
-          <img src="logo.png" alt="Logo" />
-        </div>
-        <div className="menu-toggle" id="menu-toggle" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className={`nav-items ${isMenuOpen ? 'open' : ''}`} id="nav-items">
-          <div className="nav-item">
-            <a href="#" className="anchor">Features</a>
-            <div className="dropdown-content">
-              <div className="transparent"></div>
-              <div className="column">
-                <h3>Section 1</h3>
-                <p>Content for section 1.</p>
-              </div>
-              <div className="column">
-                <h3>Section 2</h3>
-                <p>Content for section 2.</p>
-              </div>
-              <div className="column">
-                <h3>Section 3</h3>
-                <p>Content for section 3.</p>
-              </div>
-            </div>
-          </div>
-          <div className="nav-item">
-            <Link to={'/help'} className="anchor">Help</Link>
-          </div>
-        </div>
-        <div className="auth-buttons">
-          <Link to={'/signup'}><button>Signup</button></Link>
-          <Link to={'/login'}><button>Login</button></Link>
-        </div>
+    <nav className="navbar">
+      {/* Logo Section */}
+      <div className="logo">
+        <img src={logo} alt="School Logo" />
+        <h1 className="logo-text">CampusLink</h1>
       </div>
-    // </div>
+
+      {/* Navigation Links */}
+      <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+        <li className="nav-item">
+          <Link to="/" className="nav-link">Home</Link>
+        </li>
+        <li className="nav-item">
+          <span className="nav-link" onClick={toggleDropdown}>Features</span>
+          {isDropdownOpen && (
+            <ul className="dropdown-menu" onClick={(e) => e.stopPropagation()}>
+              <li><Link to="/feature1">Attendance Management</Link></li>
+              <li><Link to="/feature2">Student Records</Link></li>
+              <li><Link to="/feature3">Faculty Management</Link></li>
+            </ul>
+          )}
+        </li>
+        <li className="nav-item">
+          <Link to="/help" className="nav-link">Help</Link>
+        </li>
+      </ul>
+
+      {/* Auth Buttons */}
+      <div className="auth-buttons">
+        <Link to="/signup" className="auth-btn">Signup</Link>
+        <Link to="/login" className="auth-btn">Login</Link>
+      </div>
+
+      {/* Hamburger Menu */}
+      <div className="menu-toggle" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    </nav>
   );
 };
 
