@@ -183,7 +183,7 @@ function SchoolManagement() {
                     <div className="babu">
                     {[
                         { icon: "fa-building-columns", label: "Dashboard", section: "dashboard" },
-                        { icon: "fa-person-chalkboard", label: "Student Section", section: "student" },
+                        { icon: "fa-person-chalkboard", label: "Student", section: "student" },
                         { icon: "fa-book-open-reader", label: "Books", section: "books" },
                         { icon: "fa-money-bill", label: "Fee", section: "fee" },
                         { icon: "fa-hand", label: "Attendance", section: "attendance" },

@@ -5,7 +5,7 @@ import backgroundImage from '../../assets/kids2.jpg'; // Correct background imag
 
 const MainSection = () => {
   return (
-    <main style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <main style={{ backgroundImage: `url(${backgroundImage})` }} className="main1">
       <div className="content">
         <h1>Connecting every part of the campus.</h1>
         <h2> </h2>
