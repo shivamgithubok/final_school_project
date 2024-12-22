@@ -1,5 +1,5 @@
 import React from "react";
-import "./Query.css";
+import "./Main.css";
 import cityImage from "../../assets/line-city.svg"; // Correct path to your image
 
 const Contact = () => {

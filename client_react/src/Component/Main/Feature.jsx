@@ -1,5 +1,5 @@
 import React from 'react';
-import './Feature.css';
+import './Main.css';
 import logo1 from '../../assets/public_school.png'; // Replace with actual logos
 import logo2 from '../../assets/public_school.png';
 import logo3 from '../../assets/public_school.png';

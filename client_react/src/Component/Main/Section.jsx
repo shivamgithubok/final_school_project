@@ -1,5 +1,5 @@
 import React from 'react';
-import './Section.css';
+import './Main.css';
 import featureImage from '../../assets/features.jpg';
 
 const Section = () => {

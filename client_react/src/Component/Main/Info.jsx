@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pricing.css"; // New CSS file for styling
+import "./Main.css"; // New CSS file for styling
 
 const Info = () => {
   // Pricing Data

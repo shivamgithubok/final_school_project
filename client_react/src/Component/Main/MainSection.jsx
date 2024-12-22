@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Main_1.css';
-import backgroundImage from './kids2.jpg'; // Correct background image path
+import './Main.css';
+import backgroundImage from '../../assets/kids2.jpg'; // Correct background image path
 
 const MainSection = () => {
   return (
-    <main>
+    <main style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="content">
         <h1>Connecting every part of the campus.</h1>
         <h2> </h2>

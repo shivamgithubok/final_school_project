@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './InfoSection.css';
+import './Main.css';
 import school1 from '../../assets/login_picture.avif'; // Replace with your image paths
 import school2 from '../../assets/sea-arch.png';
 import school3 from '../../assets/school_logo_2.jpg';
